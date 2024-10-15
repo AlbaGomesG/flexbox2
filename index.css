@@ -40,10 +40,11 @@ main {
 }
 
 .red {
-  background-color: rgb(206, 0, 0);
+  background-color: rgb(255, 4, 4);
   margin: 5px;
-  padding: 80px;
+  height: 25vh;
   width: 100%;
+  text-align: center;
 }
 
 footer {
