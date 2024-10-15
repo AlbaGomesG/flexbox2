@@ -1,54 +1,100 @@
 * {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  margin: 5px;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+.header {
+  background-color: rgba(255, 166, 0, 0.952);
+  margin: 5px;
+  height: 25vh;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.yellow {
+  background-color: rgba(244, 248, 0, 0.952);
+  margin: 5px;
+  height: 25vh;
+  width: 100%;
+  text-align: center;
+}
+
+.red {
+  background-color: rgb(206, 0, 0);
+  margin: 5px;
+  padding: 80px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  width: 100vw;
+}
+
+.tchola {
+  width: 100vw;
+  display: flex;
+}
+
+.footer {
+  background-color: rgb(120, 120, 138);
+  margin: 5px;
+  padding: 60px;
+  width: 80%;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) { 
   header {
-    background-color: rgb(36, 68, 211);
-    height: 20vh;
-    margin: 5px 5px 0 5px;
-  }
+   flex-direction: column;
+   width: auto;
+   height: 25vh;
+ }
+ 
+ .main {
+   flex-direction: column;
+ }
+ 
+ .tchola {
+   display: flex;
+   flex-direction: column;
+ }
+ }
 
-  nav {
-    background-color: rgb(52, 206, 172);
-    height: 20vh;
-    margin: 5px 5px 0 5px;
-  }
-
-  main {
-    display: flex;
-    text-align: center;
-  }
-
-  div {
-    display: flex;
-    flex-direction: column;
-    width: calc(80% - 10px);
-  }
-
-  section {
-    background-color: yellow;
-    height: 30vh;
-    margin: 5px 5px 0 5px;
-  }
-
-  article {
-    background-color: rgb(216, 88, 29);
-    height: 30vh;
-    margin: 5px 5px 0 5px;
-  }
-
-  aside {
-    background-color: rgb(255, 255, 255);
-    width: calc(25% - 15px);
-    margin: 5px 5px 0 0;
-  }
-
-  footer {
-    background-color: rgb(36, 68, 211);
-    height: 20vh;
-    margin: 5px;
-  }
+ @media (max-width: 1023px) and (min-width: 320px) { 
+  header {
+   flex-direction: column;
+   width: auto;
+   height: 25vh;
+ }
+ 
+ .main {
+   flex-direction: column;
+ }
+ 
+ .tchola {
+   display: flex;
+   flex-direction: column;
+ }
+ }
