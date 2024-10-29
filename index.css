@@ -52,12 +52,12 @@ footer {
   width: 100vw;
 }
 
-.tchola {
+.tchola01{
   width: 100vw;
   display: flex;
 }
 
-.footer {
+.footer02 {
   background-color: rgb(120, 120, 138);
   margin: 5px;
   padding: 60px;
@@ -81,6 +81,10 @@ footer {
    display: flex;
    flex-direction: column;
  }
+
+ footer {
+  flex-direction: column;
+ }
  }
 
  @media (max-width: 1023px) and (min-width: 320px) { 
@@ -94,8 +98,7 @@ footer {
    flex-direction: column;
  }
  
- .tchola {
-   display: flex;
-   flex-direction: column;
- }
+ footer, .tchola01 {
+  flex-direction: column;
+}
  }
